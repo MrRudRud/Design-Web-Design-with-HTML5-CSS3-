@@ -20,6 +20,14 @@ html {
     text-rendering: optimizeLegibility;
 }
 
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
 /* -------------------------------- */
 /* Reusable Content */
 /* -------------------------------- */
@@ -33,6 +41,7 @@ section {
 
 .box {
     padding: 1%;
+    text-align: center;
 }
 
 .box p {
@@ -96,6 +105,11 @@ h3 {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.icon-margin-top {
+    margin-top: 50px;
 }
 
 /* -------------------------------- */
@@ -220,3 +234,46 @@ header {
     opacity: 1;
 }
 
+/* HOW IT WORKS */
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 50%;
+}
+
+.work-step {
+    margin-bottom: 50px;
+}
+
+.work-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-step div {
+    color: #e67e22;
+    border: 2px #e67e22 solid;
+    border-radius: 50%;
+    display: inline-block;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    font-size: 150%;
+    float: left;
+    margin-right: 25px;
+} 
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-left: 10px;
+}
