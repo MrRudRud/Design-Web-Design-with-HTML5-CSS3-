@@ -415,13 +415,13 @@ blockquote {
     margin-top: 50px;
 }
 
-blockquote:before {
-    /* ISO quote */
+blockquote:before { 
+    /* ISO Special character quote */
     content: "\201C";
     font-size: 500%;
     display: block;
     position: absolute;
-    top: 0;
+    top: -5px;
     left: -5px;
 }
 
