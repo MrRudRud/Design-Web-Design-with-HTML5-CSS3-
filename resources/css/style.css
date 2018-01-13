@@ -14,7 +14,8 @@ orange : #e67e22
     box-sizing: border-box;
 }
 
-html {
+html,
+input {
     background-color: #fff;
     color: #555;
     font-family: 'lato', 'arial', sans-serif;
@@ -514,12 +515,13 @@ cite img {
 
 input[type=text],
 input[type=email],
-select,
+select, checkbox,
 textarea {
     width: 100%;
     padding: 7px;
     border-radius: 3px;
-    border: 1px solid #ccc;
+    border: 1px solid #e8e8e8;
+    color: #a7a7a7;
 }
 
 input[type=checkbox] {
@@ -528,12 +530,92 @@ input[type=checkbox] {
 
 .focus {outline: none;}
 
+::-webkit-input-placeholder {
+    color: #d6d6d6;
+    text-align: right;
+    font-size: 1em;
+}
 
+/* --------------------------- */
 
+/* FOOTER  */
 
+/* --------------------------- */
 
+footer {
+    background-color: #333;
+    padding: 40px;
+}
 
+.footer-nav {
+    list-style: none;
+    float: left;
+}
 
+.social-links {
+    list-style: none;
+    float: right
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li:hover,
+.footer-nav li:active {
+    padding-bottom: 5px;
+    color: #ddd;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.1s #e67e22;
+}
+
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 140%;
+}
+
+.ion-social-facebook:hover, 
+.ion-social-twitter:hover, 
+.ion-social-instagram:hover, 
+.ion-social-googleplus:hover { 
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #1dA1F2;
+}
+
+.ion-social-instagram:hover {
+    color: #c32aa3;
+}
+
+.ion-social-googleplus:hover {
+    color: #db4437;
+}
+
+footer p {
+    color: #888;
+    text-align: center;
+    font-size:90%;
+    margin-top: 50px;
+}
 
 
 
