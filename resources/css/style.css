@@ -318,6 +318,7 @@ header {
     left: 0;
     width: 100%;
     background-color: rgba(248, 248, 248, 0.98);
+    -webkit-box-shadow: 0 2px 2px #d8d8d8;
     box-shadow: 0 2px 2px #d8d8d8;
     z-index: 9999;
 }
@@ -533,7 +534,7 @@ cite img {
 }
 
 .plan-box div:first-child {
-    background-color: #f7f7f7;
+    background-color: #dedede;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -545,7 +546,7 @@ cite img {
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
-    font-weight: 100;
+    font-weight: 300;
     color: #e67e22;
 }
 
@@ -686,4 +687,24 @@ footer p {
     text-align: center;
     font-size: 90%;
     margin-top: 50px;
+}
+
+
+/* --------------------------- */
+
+/* ANIMATION  */
+
+/* --------------------------- */
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3
+{
+    opacity: 0;
+}
+
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
 }

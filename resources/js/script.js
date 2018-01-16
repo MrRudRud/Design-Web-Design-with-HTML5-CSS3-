@@ -3,15 +3,37 @@ $(document).ready(function() {
         element: document.getElementById('js--section-features'),
         handler: function(direction) {
             if(direction == "down"){
-                $('nav').addClass('sticky');
+                $('nav').addClass('sticky animated fadeInDown');
             } else {
-                $('nav').removeClass('sticky');
+                $('nav').removeClass('sticky');   
             }
         },
-        offset: '10%'
+        offset: '15%'
     });
     
+    // Animation Scroll
+    // http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animate-css-and-jquery/
+    $('.js--wp-1').addClass("js--wp-1").viewportChecker({
+        classToAdd: 'animated fadeInDown',
+        offset: 100
+    });
 
+    $('.app-screen').addClass("js--wp-2").viewportChecker({
+        classToAdd: 'animated bounceInRight',
+        offset: 100
+    });
+    
+    $('.js--wp-3').addClass("js--wp-3").viewportChecker({
+        classToAdd: 'animated zoomIn',
+        offset: 100
+    });    
+    
+    $('.js--wp-4').addClass("js--wp-4").viewportChecker({
+        classToAdd: 'animated pulse',
+        offset: 100
+    });
+    
+    
     //Scroll on Buttons
     $('.js--scroll-to-plan').click(function () {
         $('html, body').animate({scrollTop: $('#js--section-plans').offset().top}, 1000)
@@ -57,8 +79,7 @@ $(document).ready(function() {
                     });
                 }
             }
-        });  
-    
+        });   
 
 });
     
@@ -89,3 +110,22 @@ $(document).ready(function() {
 //       $(this).css('background-color', '#ff0000'); 
 //    });
 //    
+
+
+//    $(window).scroll(function(){
+//        if($(window).scrollTop() <= 1000){
+//            $('.btn').addClass('animated bounce');
+//            $('.js--wp-1').addClass('animated fadeIn');             
+//            $('.js--wp-2').addClass('animated bounceInRight');             
+//            $('.js--wp-3').addClass('animated fadeIn');             
+//            $('.js--wp-4').addClass('animated fadeIn');            
+//        } else {
+//            $('.btn').removeClass('animated bounce');
+//            $('.js--wp-1').removeClass('animated fadeIn');             
+//            $('.js--wp-2').removeClass('animated bounceInRight');             
+//            $('.js--wp-3').removeClass('animated fadeIn');             
+//            $('.js--wp-4').removeClass('animated fadeIn');   
+//        }
+//    });    
+    
+           
