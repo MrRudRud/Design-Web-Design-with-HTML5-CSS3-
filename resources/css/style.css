@@ -244,6 +244,7 @@ header {
     background-attachment: fixed;
     background-position: center;
     height: 100vh;
+    font-size: 17px;
 }
 
 .hero-text-box {
@@ -256,7 +257,7 @@ header {
 }
 
 .logo  {
-    height: 100px;
+    height: 80px;
     width: auto;
     float: left;
     margin-top: 20px;
@@ -316,8 +317,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.98);
-    box-shadow: 0 2px 2px #e6e6e6;
+    background-color: rgba(248, 248, 248, 0.98);
+    box-shadow: 0 2px 2px #d8d8d8;
+    z-index: 9999;
 }
 
 .sticky .main-nav {
