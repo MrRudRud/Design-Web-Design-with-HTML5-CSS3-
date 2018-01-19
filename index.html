@@ -19,16 +19,17 @@
 <body>
     <!--     .nav>ul.list>li.space.${item}*3-->
     <header>
-        <nav>
+        <nav class="sticky">
             <div class="row">
                 <img src="resources/img/logo-white.png" alt="Omifood logo" class="logo">
                 <img src="resources/img/logo.png" alt="Omifood logo" class="logo-black">
-                <ul class="main-nav">
+                <ul class="main-nav js--main-nav">
                     <li><a href="#js--section-features">Food delivery</a></li>
                     <li><a href="#works">How it works</a></li>
                     <li><a href="#cities">Our cities</a></li>
                     <li><a href="#js--section-plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
             </div>
         </nav>
         <div class="hero-text-box">
@@ -76,7 +77,7 @@
             </div>
         </div>
     </section>
-    <section class="section-meals" id="works">
+    <section class="section-meals">
         <ul class="meal-showcase clearfix">
             <li>
                 <figure class="meal-photo">
@@ -122,7 +123,7 @@
             </li>
         </ul>
     </section>
-    <section class="section-steps">
+    <section class="section-steps" id="works">
         <div class="row">
             <h2> How it works &mdash; Simple as 1, 2, 3 </h2>
         </div>

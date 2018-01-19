@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     var waypoint = new Waypoint({
         element: document.getElementById('js--section-features'),
         handler: function(direction) {
@@ -11,6 +12,22 @@ $(document).ready(function() {
         offset: '15%'
     });
     
+    // Mobile Navigation
+    $('.js--nav-icon').click(function() {
+        var nav = $('.js--main-nav');
+        var icon = $('.js--nav-icon i')
+        
+        if(icon.hasClass('ion-navicon-round')) {
+            icon.addClass('ion-close-round');
+            icon.removeClass('ion-navicon-round');
+        }else{
+            icon.addClass('ion-navicon-round');
+            icon.removeClass('ion-close-round');
+        }
+            nav.slideToggle(200);
+    });
+    
+    
     // Animation Scroll
     // http://www.web2feel.com/tutorial-for-animated-scroll-loading-effects-with-animate-css-and-jquery/
     $('.js--wp-1').addClass("js--wp-1").viewportChecker({
@@ -19,7 +36,7 @@ $(document).ready(function() {
     });
 
     $('.app-screen').addClass("js--wp-2").viewportChecker({
-        classToAdd: 'animated bounceInRight',
+        classToAdd: 'animated bounceInLeft',
         offset: 100
     });
     
@@ -83,49 +100,3 @@ $(document).ready(function() {
 
 });
     
-//    var waypoints = $('.js--section-features').waypoint({
-//        handler: function(direction) {
-//            if(direction == "down"){
-//                $('nav').addClass('sticky');
-//            } else {
-//                $('nav').removeClass('sticky');
-//            }
-//        },
-//        offset: '15%'
-//    });
-    
-//    $('.js--section-features').Waypoint(function(direction){
-//        if(direction == "down"){
-//            $('nav').addClass('sticky');
-//        } else {
-//            $('nav').removeClass('sticky');
-//        }
-//    },{ offset: '15%;' 
-//        
-//    });
-    
-
-//   
-//    $('h1').click(function(){
-//       $(this).css('background-color', '#ff0000'); 
-//    });
-//    
-
-
-//    $(window).scroll(function(){
-//        if($(window).scrollTop() <= 1000){
-//            $('.btn').addClass('animated bounce');
-//            $('.js--wp-1').addClass('animated fadeIn');             
-//            $('.js--wp-2').addClass('animated bounceInRight');             
-//            $('.js--wp-3').addClass('animated fadeIn');             
-//            $('.js--wp-4').addClass('animated fadeIn');            
-//        } else {
-//            $('.btn').removeClass('animated bounce');
-//            $('.js--wp-1').removeClass('animated fadeIn');             
-//            $('.js--wp-2').removeClass('animated bounceInRight');             
-//            $('.js--wp-3').removeClass('animated fadeIn');             
-//            $('.js--wp-4').removeClass('animated fadeIn');   
-//        }
-//    });    
-    
-           

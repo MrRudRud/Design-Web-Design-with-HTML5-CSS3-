@@ -65,6 +65,38 @@
     
     .main-nav { display: none; }
     
+    .mobile-nav-icon {
+	    display: inline-block;
+    }
+    
+    .main-nav {
+	    float: left;
+        margin-top: 35px;
+        margin-left: 35px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 90%;
+    }
+    
+    .sticky .main-nav li {
+        margin-top: 10px;
+        display: grid;
+    }
+        
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0;}
+    .sticky .mobile-nav-icon {margin-top: 10px;}    
+    .sticky .mobile-nav-icon i {color: #000;}    
+    
     h1 { font-size: 180%; }
     h2 { font-size: 130%; }
     h3 { font-size: 120%; }
